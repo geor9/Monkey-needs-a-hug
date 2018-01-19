@@ -4,12 +4,13 @@
   function convert() {
   var output=document.getElementById("ti2");  
   var input=document.getElementById("ti1").value;
-    output.innerHTML = "";
+    output.innerHTML = input.toString() + ": <br>";
     for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
 n="000000000".substr(n.length)+n;
 output.innerHTML += n;
     }
+
 
     output.innerHTML = output.innerHTML.replace(/[1]/g, "🙂");
         output.innerHTML = output.innerHTML.replace(/[0]/g, "🙁");
@@ -29,7 +30,7 @@ output.innerHTML += n;
 </head>
 <body>
 A useful tool for when your consciousness is trapped inside a stuffed monkey.<br><br>
-<input id="ti1" value ="Type here"/>
+<input id="ti1" value ="Hello"/>
 <p>
 <button onclick="convert();">Speak in monkey binary</button><br><br>
 <br>
