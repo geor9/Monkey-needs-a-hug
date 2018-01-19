@@ -11,16 +11,27 @@ n="000000000".substr(n.length)+n;
 output.innerHTML += n;
     }
 
+    output.innerHTML = output.innerHTML.replace(/[1]/g, "🙂");
+        output.innerHTML = output.innerHTML.replace(/[0]/g, "🙁");
+
+output.innerHTML += "<br><br>";
+
+            for (i=0; i < input.length; i++) {
+var n= input[i].charCodeAt(0).toString(2) + " ";
+n="000000000".substr(n.length)+n;
+output.innerHTML += n;
+    }
+
     output.innerHTML = output.innerHTML.replace(/[1]/g, "Monkey loves you. ");
         output.innerHTML = output.innerHTML.replace(/[0]/g, "Monkey needs a hug. ");
 }
 </script>
 </head>
 <body>
-A useful tool for when your consciousness is trapped inside a stuffed monkey. Binary ASCII text: 1 = Monkey loves you. 0 = Monkey needs a hug.<br><br>
+A useful tool for when your consciousness is trapped inside a stuffed monkey.<br><br>
 <input id="ti1" value ="Type here"/>
 <p>
-<button onclick="convert();">Speak</button><br><br>
+<button onclick="convert();">Speak in monkey binary</button><br><br>
 <br>
 <div id="ti2"/>...</div>
 </body>
