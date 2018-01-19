@@ -60,8 +60,8 @@ z		Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hu
 |		Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey loves you. Monkey loves you. 
 }		Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey loves you. Monkey needs a hug. 
 ~		Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey loves you. 
-DEL	Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug.
-SPA	Monkey needs a hug. Monkey loves you. Monkey loves you. Monkey loves you. Monkey loves you. Monkey loves you. 
+DEL	  Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug. Monkey needs a hug.
+SPACE	  Monkey needs a hug. Monkey loves you. Monkey loves you. Monkey loves you. Monkey loves you. Monkey loves you. 
 !		Monkey needs a hug. Monkey loves you. Monkey loves you. Monkey loves you. Monkey loves you. Monkey needs a hug. 
 "		Monkey needs a hug. Monkey loves you. Monkey loves you. Monkey loves you. Monkey needs a hug. Monkey loves you. 
 #		Monkey needs a hug. Monkey loves you. Monkey loves you. Monkey loves you. Monkey needs a hug. Monkey needs a hug. 
