@@ -1,0 +1,19 @@
+<head>
+<script>
+function convert() {
+  var output=document.getElementById("ti2");  
+  var input=document.getElementById("ti1").value;
+    output.innerHTML = "";
+    for (i=0; i < input.length; i++) {
+     	output.innerHTML +=input[i].charCodeAt(0).toString(2) + " ";
+    }
+    output.innerHTML = output.innerHTML.replace(/[0]+/g, "Monkey loves you. ");
+    output.innerHTML = output.innerHTML.replace(/[1]+/g, "Monkey needs a hug. ");
+}
+</script>
+</head>
+<input id="ti1" value ="Hello World."/>
+<p>
+<button onclick="convert();">Speak</button>
+<br><br>
+<div id="ti2"/></div>
