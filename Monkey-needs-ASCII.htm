@@ -4,11 +4,11 @@
   function convert() {
   var output=document.getElementById("ti2");  
   var input=document.getElementById("ti1").value;
-    output.innerHTML = input.toString() + ": <br>";
+    output.innerHTML = input.toString() + ": <br>Button press sequence:<br><br>"; //button press output
     for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
 n="000000000".substr(n.length)+n; //prepend zeroes so each ascii letter is a string of eight 1s and 0s.
-output.innerHTML += "<br><br>Button press sequence: ";
+
 output.innerHTML += n;
     }
 
@@ -16,7 +16,7 @@ output.innerHTML += n;
     output.innerHTML = output.innerHTML.replace(/[1]/g, "🙂"); //replace 1 with happy face
         output.innerHTML = output.innerHTML.replace(/[0]/g, "🙁");
 
-output.innerHTML += "<br><br>Audio: ";
+output.innerHTML += "<br><br>Audio:<br>"; //audio output
 
             for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
