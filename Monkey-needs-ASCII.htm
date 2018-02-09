@@ -7,15 +7,16 @@
     output.innerHTML = input.toString() + ": <br>";
     for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
-n="000000000".substr(n.length)+n;
+n="000000000".substr(n.length)+n; //prepend zeroes so each ascii letter is a string of eight 1s and 0s.
+output.innerHTML += "<br><br>Button press sequence: ";
 output.innerHTML += n;
     }
 
 
-    output.innerHTML = output.innerHTML.replace(/[1]/g, "🙂");
+    output.innerHTML = output.innerHTML.replace(/[1]/g, "🙂"); //replace 1 with happy face
         output.innerHTML = output.innerHTML.replace(/[0]/g, "🙁");
 
-output.innerHTML += "<br><br>";
+output.innerHTML += "<br><br>Audio: ";
 
             for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
@@ -29,10 +30,10 @@ output.innerHTML += n;
 </script>
 </head>
 <body>
-A useful tool for when your consciousness is trapped inside a stuffed monkey.<br><br>
+A handy guide on what to press when your consciousness is trapped in a stuffed monkey that can only say two things, i.e. how Black Mirror s04e06 should have ended. Morse code could have worked too.<br><br>
 <input id="ti1" value ="Hello"/>
 <p>
-<button onclick="convert();">Speak in monkey binary</button><br><br>
+<button onclick="convert();">Speak</button><br><br>
 <br>
 <div id="ti2"/>...</div>
 </body>
