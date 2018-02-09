@@ -4,7 +4,7 @@
   function convert() {
   var output=document.getElementById("ti2");  
   var input=document.getElementById("ti1").value;
-    output.innerHTML = input.toString() + ": <br>Button press sequence:<br><br>"; //button press output
+    output.innerHTML = input.toString() + ": <br><br>Button press sequence:<br>"; //button press output
     for (i=0; i < input.length; i++) {
 var n= input[i].charCodeAt(0).toString(2) + " ";
 n="000000000".substr(n.length)+n; //prepend zeroes so each ascii letter is a string of eight 1s and 0s.
@@ -31,7 +31,7 @@ output.innerHTML += n;
 </head>
 <body>
 A handy guide on what to press when your consciousness is trapped in a stuffed monkey that can only say two things.  Morse code could have worked too.<br>
-How Black Mirror s04e06 should have ended.<br><br>
+It's how Black Mirror s04e06 should have ended.<br><br>
 <input id="ti1" value ="Hello"/>
 <p>
 <button onclick="convert();">Speak</button><br><br>
